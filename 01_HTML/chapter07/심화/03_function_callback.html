@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        function callback(num,callback){    
+            for(let i =0 ; i<num; i++){
+                callback();
+            }
+
+        }
+
+    let doit = function () {
+      alert('함수 호출');
+      };
+      callback(10,doit)
+
+    </script>
+  </body>
+</html>
+<!-- 다음 함수를 콜백함수로 전달하고, 반복 호출할 회수를 매개변수로 전달하여 그 회수만큼 콜백 함수를
+호출하는 JS를 작성하세요.

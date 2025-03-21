@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hd {
+        background-color: rgb(42, 40, 73);
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      h1 {
+        color: white;
+      }
+      .hd nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: right;
+      }
+      .gnb {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .gnb > li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .foot {
+        background-color: rgb(42, 40, 73);
+        color: white;
+        padding: 0 100px;
+      }
+      .ftcont {
+        display: flex;
+        justify-content: space-between;
+      }
+      .ftsec {
+        width: calc(100% / 3);
+        padding: 1rem;
+      }
+      .contact {
+        padding-left: 0;
+      }
+      .contact > li {
+        list-style: none;
+        text-align: left;
+      }
+      .link {
+        padding-left: 0;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: gray;
+      }
+      .catelist > li {
+        list-style: none;
+        text-align: left;
+        text-wrap: nowrap;
+        margin-left: 0px;
+      }
+      .catelist {
+        padding-left: 0;
+      }
+      .category {
+        background-color: lightgray;
+        width: 150px;
+        height: 500px;
+        padding: 1rem;
+        order: -1;
+      }
+      main {
+        display: flex;
+        padding: 0 150px;
+        gap: 1rem;
+      }
+      .photobox {
+        display: flex;
+        width: 650px;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .imgbox {
+        background-color: skyblue;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+      }
+      .textbox {
+        width: 200px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hd">
+      <h1>FlexSite</h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="fc">
+        <h2>Featured Content</h2>
+        <p>Practice your flexbox skills with this layout example</p>
+        <section class="photobox">
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title1</p>
+            <div class="textbox">
+              This is a sample card description. You can practice flex layout
+              with these cards.
+            </div>
+          </div>
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title2</p>
+          </div>
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title3</p>
+          </div>
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title4</p>
+          </div>
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title5</p>
+          </div>
+          <div>
+            <div class="imgbox">image</div>
+            <p>Card Title6</p>
+          </div>
+        </section>
+      </section>
+      <section class="category">
+        <h3>Categories</h3>
+        <ul class="catelist">
+          <li>Web Development</li>
+          <hr />
+          <li>Graphic Design</li>
+          <hr />
+          <li>Digital Marketing</li>
+          <hr />
+          <li>UI/UX Design</li>
+          <hr />
+          <li>Mobile Development</li>
+          <hr />
+        </ul>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="ftcont">
+        <section class="ftsec">
+          <h4>About us</h4>
+          <hr />
+          <p>
+            This is a practice layout for learning flexbox in CSS. Try modifying
+            the flex properties to see how the layout changes.
+          </p>
+        </section>
+
+        <section class="ftsec">
+          <h4>Quick Links</h4>
+          <hr />
+          <ul class="link">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </section>
+        <section class="ftsec">
+          <h4>Contact Info</h4>
+          <hr />
+          <ul class="contact">
+            <li>Email: info@example.com</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Address: 123 Flex Street, Web City</li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
